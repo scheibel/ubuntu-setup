@@ -1,0 +1,4 @@
+# git-build-recipe format 0.4 deb-version {debupstream}+{revno}
+lp:scheibel-ubuntu-setup
+nest-part packaging lp:scheibel-ubuntu-setup ubuntu-current/debian debian
+

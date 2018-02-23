@@ -1,0 +1,121 @@
+Source: scheibel-ubuntu-setup
+Section: misc
+Priority: optional
+Maintainer: Willy Scheibel <willyscheibel@gmx.de>
+Build-Depends: build-essential
+Standards-Version: 3.8.0
+
+Package: scheibel-setup-graphics
+Architecture: any
+Depends: mesa-utils, mesa-utils-extra, compizconfig-settings-manager
+Homepage: https://github.com/scheibel/ubuntu-setup
+Description: The personal ubuntu setup by Willy Scheibel.
+
+Package: scheibel-setup-nvidia
+Architecture: any
+Depends: scheibel-setup-graphics, nvidia-390
+Homepage: https://github.com/scheibel/ubuntu-setup
+Description: The personal ubuntu setup by Willy Scheibel.
+
+Package: scheibel-setup-base
+Architecture: any
+Depends: scite, nautilus-dropbox, synergy, p7zip, unrar, cifs-utils
+Homepage: https://github.com/scheibel/ubuntu-setup
+Description: The personal ubuntu setup by Willy Scheibel.
+
+Package: scheibel-setup-communication
+Architecture: any
+Depends: pidgin
+Homepage: https://github.com/scheibel/ubuntu-setup
+Description: The personal ubuntu setup by Willy Scheibel.
+
+Package: scheibel-setup-media
+Architecture: any
+Depends: vlc, flashplugin-installer, liferea
+Homepage: https://github.com/scheibel/ubuntu-setup
+Description: The personal ubuntu setup by Willy Scheibel.
+
+Package: scheibel-setup-graphics
+Architecture: any
+Depends: inkscape, gimp
+Homepage: https://github.com/scheibel/ubuntu-setup
+Description: The personal ubuntu setup by Willy Scheibel.
+
+Package: scheibel-setup-development-common
+Architecture: any
+Depends: build-essential, git, meld
+Homepage: https://github.com/scheibel/ubuntu-setup
+Description: The personal ubuntu setup by Willy Scheibel.
+
+Package: scheibel-setup-development-c++-common
+Architecture: any
+Depends: cmake, cmake-qt-gui, qt5-default, g++-7, clang-5.0
+Homepage: https://github.com/scheibel/ubuntu-setup
+Description: The personal ubuntu setup by Willy Scheibel.
+
+Package: scheibel-setup-development-c++-graphics
+Architecture: any
+Depends: libglm-dev, libglfw-dev, libgl1-mesa-dev
+Homepage: https://github.com/scheibel/ubuntu-setup
+Description: The personal ubuntu setup by Willy Scheibel.
+
+Package: scheibel-setup-development-c++-documentation
+Architecture: any
+Depends: doxygen, graphviz
+Homepage: https://github.com/scheibel/ubuntu-setup
+Description: The personal ubuntu setup by Willy Scheibel.
+
+Package: scheibel-setup-development-c++-ide
+Architecture: any
+Depends: qtcreator
+Homepage: https://github.com/scheibel/ubuntu-setup
+Description: The personal ubuntu setup by Willy Scheibel.
+
+Package: scheibel-setup-development-c++-performance
+Architecture: any
+Depends: valgrind, kcachegrind
+Homepage: https://github.com/scheibel/ubuntu-setup
+Description: The personal ubuntu setup by Willy Scheibel.
+
+Package: scheibel-setup-development-c++-all
+Architecture: any
+Depends: scheibel-setup-development-c++-graphics, scheibel-setup-development-c++-documentation, scheibel-setup-development-c++-ide, scheibel-setup-development-c++-performance
+Homepage: https://github.com/scheibel/ubuntu-setup
+Description: The personal ubuntu setup by Willy Scheibel.
+
+Package: scheibel-setup-development-typescript
+Architecture: any
+Depends: npm, chromium-browser
+Homepage: https://github.com/scheibel/ubuntu-setup
+Description: The personal ubuntu setup by Willy Scheibel.
+
+Package: scheibel-setup-development-websites
+Architecture: any
+Depends: jekyll, chromium-browser
+Homepage: https://github.com/scheibel/ubuntu-setup
+Description: The personal ubuntu setup by Willy Scheibel.
+
+Package: scheibel-setup-development-all
+Architecture: any
+Depends: scheibel-setup-development-c++-all, scheibel-setup-development-typescript, scheibel-setup-development-websites
+Homepage: https://github.com/scheibel/ubuntu-setup
+Description: The personal ubuntu setup by Willy Scheibel.
+
+Package: scheibel-setup-writing-latex
+Architecture: any
+Depends: texlive, texlive-bibtex-extra, texlive-fonts-extra, texlive-extra-utils, texlive-latex-extra, texlive-xetex, texlive-generic-extra, texlive-science, texlive-humanities, texlive-lang-german
+Homepage: https://github.com/scheibel/ubuntu-setup
+Description: The personal ubuntu setup by Willy Scheibel.
+
+Package: scheibel-setup-writing-ide
+Architecture: any
+Depends: texstudio, jabref
+Homepage: https://github.com/scheibel/ubuntu-setup
+Description: The personal ubuntu setup by Willy Scheibel.
+
+Package: scheibel-setup-writing-all
+Architecture: any
+Depends: scheibel-setup-writing-latex, scheibel-setup-writing-ide
+Homepage: https://github.com/scheibel/ubuntu-setup
+Description: The personal ubuntu setup by Willy Scheibel.
+

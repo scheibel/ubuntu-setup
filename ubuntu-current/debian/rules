@@ -1,0 +1,23 @@
+#!/usr/bin/make -f
+
+# firstly called by launchpad
+clean:
+
+# secondly called by launchpad
+build: build-arch
+
+build-arch:
+
+# thirdly called by launchpad
+binary: binary-arch
+
+binary-arch: 
+	for package in `cat debian/control | grep "Package: " | awk '{ print $$2 };'`; do\
+		mkdir -p debian/tmp/DEBIAN ; \
+		dpkg-gencontrol -p$$package ; \
+		dpkg --build debian/tmp .. ; \
+		rm -rf debian/tmp ; \
+	done
+
+.PHONY: build build-arch binary binary-arch clean
+
