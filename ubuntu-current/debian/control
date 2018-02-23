@@ -55,7 +55,7 @@ Description: The personal ubuntu setup by Willy Scheibel.
 
 Package: scheibel-setup-development-c++-graphics
 Architecture: any
-Depends: libglm-dev, libglfw-dev, libgl1-mesa-dev
+Depends: libglm-dev, libglfw3-dev, libgl1-mesa-dev
 Homepage: https://github.com/scheibel/ubuntu-setup
 Description: The personal ubuntu setup by Willy Scheibel.
 
